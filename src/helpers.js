@@ -2,7 +2,8 @@ const uuid = require("uuid");
 
 module.exports = {
   makePerson,
-  forEvenOnly
+  forEvenOnly,
+  greet
 };
 
 function makePerson(firstName, lastName) {
@@ -17,3 +18,11 @@ function forEvenOnly(number, callback) {
     callback(number);
   }
 }
+
+function greet(cb) {
+  return cb();
+}
+
+// function callApi(){
+
+// }
