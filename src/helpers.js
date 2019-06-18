@@ -1,7 +1,8 @@
 const uuid = require("uuid");
 
 module.exports = {
-  makePerson
+  makePerson,
+  forEvenOnly
 };
 
 function makePerson(firstName, lastName) {
@@ -9,4 +10,10 @@ function makePerson(firstName, lastName) {
     id: uuid(),
     name: `${firstName} ${lastName}`
   };
+}
+
+function forEvenOnly(number, callback) {
+  if (number % 2 === 0) {
+    callback(number);
+  }
 }
