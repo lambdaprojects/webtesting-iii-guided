@@ -52,7 +52,7 @@ describe("helpers", () => {
   describe("test an api post method", () => {
     it("Testing the post method of axios", done => {
       const url = "https://anyapi";
-      const payload = { password: "mellons" };
+      const payload = { password: "mellonsw" };
       axios
         .post(url, payload)
         .then(res => {
